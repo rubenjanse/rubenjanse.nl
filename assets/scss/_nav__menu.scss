@@ -1,0 +1,156 @@
+@use "var";
+
+.nav__overlay{
+  background-color: var(--color-overlay);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: var.$z-top-layer;
+}
+
+.header{
+  background-color: var(--color-background);
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: var.$z-bring-to-front;
+}
+
+.nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: var.$m-1-5;
+  margin-right: var.$m-1-5;
+  height: 3rem;
+}
+
+.nav__logo{
+  color: var(--color-primary);
+  font-size: var(--font-size-h3);
+  font-weight: var.$font-medium;
+
+  &:hover{
+    color: var(--color-primary-hover);
+  }
+}
+
+.nav__buttons{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav__menu{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: var(--color-background);
+  padding: 2rem 1rem 3rem;
+  box-shadow: 0 -1px 4px var(--color-transparent-light);
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.nav__list{
+  gap: 1.3rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+}
+
+.nav__link{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
+  color: var(--color-link);
+  font-size: var(--font-size-normal);
+  font-weight: var.$font-medium;
+
+  &:hover{
+    color: var(--color-link-hover);
+  }
+}
+
+.active__link{
+  color: var(--color-link-active);
+}
+
+.nav__icon{
+  font-size: var(--font-size-h1);
+  color: var(--color-icon);
+
+  &:hover{
+    color: var(--color-icon-hover);
+  }
+}
+
+.scroll__navbar{
+  box-shadow: 0 -1px 4px var(--color-transparent-light);
+}
+
+////////// media queries //////////
+
+// 320px
+@media screen and (min-width: var.$screen-mobile-sm){
+  .nav__menu{
+    padding: 2.5rem 1.5rem 3rem;
+  }
+
+  .nav__list{
+    gap: 2rem;
+  }
+}
+
+// 820px
+@media screen and (min-width: var.$screen-tablet-lg){
+  .header{
+    position: fixed;
+    top: 0;
+    bottom: unset;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  .nav{
+    flex: 1 0 auto;
+    gap: 2rem;
+    max-width: 1280px;
+  }
+
+  .nav__menu{
+    position: static;
+    bottom: unset;
+    left: unset;
+    padding: 0;
+    box-shadow: none;
+  }
+
+  .nav__list{
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    align-items: center;
+  }
+
+  .nav__icon{
+    display: none;
+  }
+
+  .theme__toggle{
+    font-size: 2rem;
+  }
+
+}
+
+// 1024px
+@media screen and (min-width: var.$screen-laptop){
+  .nav__list{
+    gap: 2.2rem;
+  }
+}
+

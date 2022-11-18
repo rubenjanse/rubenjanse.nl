@@ -1,0 +1,847 @@
+<!doctype html>
+<html lang="nl">
+<head>
+
+  <!-- metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- robots noindex, nofollow -->
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="manifest" href="site.webmanifest">
+
+  <!-- unicons -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+  <!-- css -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <title>Ruben's Portfolio</title>
+</head>
+<body class="dark font-small">
+<!-- nav overlay -->
+<div class="nav__overlay hidden" id="nav-overlay"></div>
+
+<!-- header -->
+<header class="header" id="header">
+  <nav class="nav">
+
+    <!-- logo -->
+    <a href="#" class="nav__logo">Ruben</a>
+
+    <!-- nav menu -->
+    <div class="nav__menu hidden" id="nav-menu">
+      <ul class="nav__list grid">
+        <li class="nav__item">
+          <a href="#home" class="nav__link active__link">
+            <i class="uil uil-estate nav__icon"></i>
+            Home
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#skills" class="nav__link">
+            <i class="uil uil-clipboard-notes nav__icon"></i>
+            Skills
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#diensten" class="nav__link">
+            <i class="uil uil-suitcase nav__icon"></i>
+            Diensten
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#portfolio" class="nav__link">
+            <i class="uil uil-scenery nav__icon"></i>
+            Portfolio
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#overmij" class="nav__link">
+            <i class="uil uil-user nav__icon"></i>
+            <span style="min-width: 63px">Over mij</span>
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#cv" class="nav__link">
+            <i class="uil uil-clipboard-notes nav__icon"></i>
+            CV
+          </a>
+        </li>
+        <li class="nav__item">
+          <a href="#contact" class="nav__link">
+            <i class="uil uil-message nav__icon"></i>
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- dark || light toggle -->
+    <div class="nav__buttons">
+      <i class="uil uil-moon theme__toggle" id="theme-toggle" title="Dark Theme"></i>
+
+      <!-- menu toggle -->
+      <div class="nav__toggle" id="nav-toggle">
+        <div class="toggle-top"></div>
+        <div class="toggle-middle"></div>
+        <div class="toggle-bottom"></div>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!-- main -->
+<main class="main" id="main">
+  <!-- home -->
+  <section class="home section" id="home">
+    <div class="hero__container container">
+
+      <div class="hero__content">
+
+        <!-- hero socials -->
+        <div class="hero__social">
+          <a href="tel:0644242869" target="_blank" class="hero__social-icon">
+            <i class="uil uil-phone"></i>
+          </a>
+          <a href="mailto:hallo@rubenjanse.nl" target="_blank" class="hero__social-icon">
+            <i class="uil uil-envelope-alt"></i>
+          </a>
+          <a href="https://github.com/rubenjanse/rubenjanse.nl" target="_blank" class="hero__social-icon">
+            <i class="uil uil-github"></i>
+          </a>
+        </div>
+
+        <!-- hero image -->
+        <div class="hero__image-container">
+          <img src="assets/img/hero-image.png" alt="" class="hero__image">
+        </div>
+
+        <!-- hero data -->
+        <div class="hero__data">
+          <h1 class="hero__title">Hoi, ik ben Ruben</h1>
+          <h3 class="hero__subtitle">Front-end developer</h3>
+          <p class="hero__description">De HTML, CSS en javaScript kun je gemakkelijk bekijken op <a href="https://github.com/rubenjanse/rubenjanse.nl" class="text__link">gitHub</a>.</p>
+          <a href="#contact" class="button button__flex">
+            Neem contact op <i class="uil uil-message button__icon"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- scroll down button -->
+      <div class="home__scroll">
+        <a href="#contact" class="home__scroll-button button__flex">
+          <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+          <span class="home__scroll-name">Scroll down</span>
+          <i class="uil uil-arrow-down home__scroll-arrow"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- skills -->
+  <section class="skills section" id="skills">
+    <div class="section__header">
+      <h2 class="section__title">Skills</h2>
+      <p class="section__subtitle">Wat kan ik?</p>
+    </div>
+
+    <div class="skills__content skills__container container">
+
+      <!-- skills 1 -->
+      <div class="skills__header">
+        <i class="uil uil-brackets-curly icon__skills"></i>
+        <div>
+          <h2 class="skills__title">Front-end development</h2>
+          <p class="skills__subtitle">Geen ervaring, wel vaardig.</p>
+        </div>
+        <i class="uil uil-arrow-down skills__arrow arrow__up"></i>
+      </div>
+      <div class="skills__list ">
+        <div class="skills__data">
+          <div class="skills__titles">
+            <div class="skills__name"><i class="uil uil-html5-alt icon__html"></i> HTML5</div>
+            <span class="skills__number">80%</span>
+          </div>
+
+          <div class="skills__bar">
+            <span class="skills__percentage skills__html"></span>
+          </div>
+
+          <div class="skills__titles">
+            <div class="skills__name"><i class="uil uil-css3-simple icon__css"></i> CSS3</div>
+            <span class="skills__number">75%</span>
+          </div>
+
+          <div class="skills__bar">
+            <span class="skills__percentage skills__css"></span>
+          </div>
+
+          <div class="skills__titles">
+            <div class="skills__name"><i class="uil uil-java-script icon__js"></i> JavaScript ES6</div>
+            <span class="skills__number">60%</span>
+          </div>
+
+          <div class="skills__bar">
+            <span class="skills__percentage skills__js"></span>
+          </div>
+
+          <div class="skills__titles">
+            <div class="skills__name" style="display: flex"><img src="assets/img/b-logo.png" alt="" style="width:20px; margin-right:7px;"> Bootstrap 5</div>
+            <span class="skills__number">50%</span>
+          </div>
+
+          <div class="skills__bar">
+            <span class="skills__percentage skills__bootstrap"></span>
+          </div>
+        </div>
+      </div>
+
+      <!-- skills 2 -->
+      <div class="skills__header">
+        <i class="uil uil-wrench icon__skills"></i>
+        <div>
+          <h2 class="skills__title">Tools</h2>
+          <p class="skills__subtitle">Handig.</p>
+        </div>
+        <i class="uil uil-arrow-down skills__arrow"></i>
+      </div>
+      <div class="skills__list">
+        <div class="skills__data">
+          <div class="skills__titles">
+            <div class="skills__name"><i class="uil uil-box icon__npm"></i> NPM</div>
+            <span class="skills__number">50%</span>
+          </div>
+
+          <div class="skills__bar">
+            <span class="skills__percentage skills__npm"></span>
+          </div>
+
+          <div class="skills__titles">
+            <div class="skills__name"><i class="uil uil-check icon__sass"></i> SASS</div>
+            <span class="skills__number">80%</span>
+          </div>
+
+          <div class="skills__bar">
+            <span class="skills__percentage skills__sass"></span>
+          </div>
+
+          <div class="skills__titles">
+            <div class="skills__name"><i class="uil uil-code-branch icon__node"></i> Node</div>
+            <span class="skills__number">40%</span>
+          </div>
+
+          <div class="skills__bar">
+            <span class="skills__percentage skills__node"></span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- diensten -->
+  <section class="diensten section" id="diensten">
+    <div class="section__header">
+      <h2 class="section__title">Diensten</h2>
+      <p class="section__subtitle">Wat kan ik voor je doen?</p>
+    </div>
+
+    <div class="diensten__container ">
+
+      <!-- dienst 1 -->
+      <div class="diensten__button">
+        <div class="diensten__header">
+          <i class="uil uil-arrow diensten__icon"></i>
+          <h3 class="diensten__title">Development</h3>
+          <div class="diensten__link">
+            <span class="diensten__link-text">Lees meer</span>
+            <i class="uil uil-arrow-right diensten__link-arrow"></i>
+          </div>
+        </div>
+      </div>
+      <div class="diensten__modal">
+        <div class="diensten__modal-data">
+          <h3 class="diensten__modal-title">Development</h3>
+          <i class="uil uil-times-circle modal__close-icon"></i>
+          <ul class="diensten__modal-list">
+            <li class="diensten__modal-item">
+              <i class="uil uil-check modal__check-icon"></i>
+              <span class="diensten__modal-content"> Bouwen van webapplicaties en mobiele apps.</span>
+            </li>
+            <li class="diensten__modal-item">
+              <i class="uil uil-check modal__check-icon"></i>
+              <span class="diensten__modal-content"> Optimale user experience en responsive design.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- dienst 2 -->
+      <div class="diensten__button">
+        <div class="diensten__header">
+          <i class="uil uil-brush-alt diensten__icon"></i>
+          <h3 class="diensten__title">Onderhoud</h3>
+        </div>
+        <div class="diensten__link">
+          <span class="diensten__link-text">Lees meer</span>
+          <i class="uil uil-arrow-right diensten__link-arrow"></i>
+        </div>
+      </div>
+      <div class="diensten__modal">
+        <div class="diensten__modal-data">
+          <h3 class="diensten__modal-title">Onderhoud</h3>
+          <i class="uil uil-times-circle modal__close-icon"></i>
+          <ul class="diensten__modal-list">
+            <li class="diensten__modal-item">
+              <i class="uil uil-check modal__check-icon"></i>
+              <span class="diensten__modal-content"> Onderhouden van bestaande code.</span>
+            </li>
+            <li class="diensten__modal-item">
+              <i class="uil uil-check modal__check-icon"></i>
+              <span class="diensten__modal-content"> Upgraden naar de nieuwste technieken.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- portfolio -->
+  <section class="portfolio section" id="portfolio">
+    <div class="section__header">
+      <h2 class="section__title">Portfolio</h2>
+      <p class="section__subtitle">Laat maar zien.</p>
+    </div>
+
+    <div class="portfolio__container container">
+      <div class="portfolio__data">
+        <ul class="portfolio__list"></ul>
+      </div>
+
+      <span class="portfolio__button portfolio__button-next">
+        <i class="uil uil-angle-right-b portfolio__arrow"></i>
+      </span>
+      <span class="portfolio__button portfolio__button-prev">
+         <i class="uil uil-angle-left-b portfolio__arrow"></i>
+      </span>
+
+      <div class="portfolio__pagination"></div>
+    </div>
+  </section>
+
+  <!-- overmij -->
+  <section class="overmij section" id="overmij">
+    <div class="section__header">
+      <h2 class="section__title">Over mij</h2>
+      <p class="section__subtitle">Even voorstellen</p>
+    </div>
+
+    <div class="overmij__container container">
+      <img src="https://picsum.photos/id/0/800/500" alt="placeholder" class="overmij__image">
+
+      <div class="overmij__data">
+        <p class="overmij__description">Als tiener zonder diploma school verlaten. Als twintiger begonnen
+          met studeren aan de verkeerde studie. Als dertiger sjouwen met
+          tenten. Toekomstvisie helder; iets maken, creatief zijn,
+          mentaal geprikkeld worden en obstakels overwinnen. Mijn eerste
+          website gemaakt. HTML, CSS en JavaScript basics geleerd.
+          Ambitie om verder te groeien als front-end developer. </p>
+      </div>
+    </div>
+
+    <!-- slider -->
+    <div class="swiper-container">
+      <!-- Slider main container -swiperJS- -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="slide__header"><i class="uil uil-brackets-curly slide__header-icon"></i></div>
+            <span class="slide__header-text">+1 jaar</span>
+            <div class="slide__wrapper">
+              <span class="slide__content"><i class="uil uil-html5-alt slide__content-icon"></i> HTML5</span>
+              <span class="slide__content"><i class="uil uil-css3-simple slide__content-icon"></i> CSS3</span>
+              <span class="slide__content"><i class="uil uil-java-script slide__content-icon"></i> JavaScript ES6</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide__header"><i class="uil uil-plus slide__header-icon"></i></div>
+            <span class="slide__header-text">Doelen 2023</span>
+            <div class="slide__wrapper">
+              <span class="slide__content"><i class="uil uil-asterisk slide__content-icon"></i> Groeien als front-end developer</span>
+              <span class="slide__content"><i class="uil uil-asterisk slide__content-icon"></i> HTML, CSS & JavaScript kennis uitbreiden</span>
+              <span class="slide__content"><i class="uil uil-asterisk slide__content-icon"></i> Vue, React & Bulma leren </span>
+              <span class="slide__content"><i class="uil uil-asterisk slide__content-icon"></i> Test framework Jest leren</span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide__header"><i class="uil uil-user slide__header-icon"></i></div>
+            <span class="slide__header-text">Competenties</span>
+            <div class="slide__wrapper">
+                <span class="slide__content"><i class="uil uil-asterisk slide__content-icon"></i> Doorzettingsvermogen
+                <span class="slide__content"><i class="uil uil-asterisk slide__content-icon"></i> Proactief</span></span>
+              <span class="slide__content"><i class="uil uil-asterisk slide__content-icon"></i> Creatief
+                <span class="slide__content"><i class="uil uil-asterisk slide__content-icon"></i> Nieuwsgierig</span></span>
+              <span class="slide__content"><i class="uil uil-asterisk slide__content-icon"></i> Communicatief vaardig
+                    <span class="slide__content"><i class="uil uil-asterisk slide__content-icon"></i> Punctueel</span></span>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slide__header"><i class="uil uil-yin-yang slide__header-icon"></i></div>
+            <span class="slide__header-text">Hobby</span>
+            <div class="slide__wrapper">
+              <span class="slide__content"><i class="uil uil-asterisk slide__content-icon"></i> Boksen</span>
+              <span class="slide__content"><i class="uil uil-asterisk slide__content-icon"></i> Tai Chi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- cv -->
+  <section class="cv section" id="cv">
+    <div class="section__header">
+      <h2 class="section__title">Curriculum Vitae</h2>
+      <p class="section__subtitle">Bewandelde paden.</p>
+    </div>
+
+    <div class="cv__container container">
+      <div class="cv__tabs">
+
+        <!-- cv button 1-->
+        <div class="cv__button button__flex cv__active" data-button="#opleiding">
+          <i class="uil uil-graduation-cap cv__icon"></i>
+          Opleiding
+        </div>
+
+        <!-- cv button 2-->
+        <div class="cv__button button__flex" data-button="#werkervaring">
+          <i class="uil uil-constructor cv__icon"></i>
+          Werkervaring
+        </div>
+      </div>
+
+      <div class="cv__sections">
+
+        <!-- cv content 1-->
+        <div class="cv__content cv__active" data-content id="opleiding">
+          <!-- opleidingen -->
+
+          <!-- opleiding 4 -->
+          <div class="cv__data">
+            <div></div>
+
+            <div>
+              <span class="cv__rounder"></span>
+              <span class="cv__line"></span>
+            </div>
+
+            <div class="cv__data-wrapper">
+              <h3 class="cv__title">Webdevelopment</h3>
+              <span class="cv__subtitle">Zelfstudie</span>
+              <br>
+              <span class="cv__description">HTML, CSS & JavaScript</span>
+              <br>
+              <span class="cv__description">CSS frameworks</span>
+              <br>
+              <span class="cv__description">Tools</span>
+              <div class="cv__kalender">
+                <i class="uil uil-calendar-alt calendar__icon"></i>
+                <br>
+                04/2020 - heden
+              </div>
+            </div>
+          </div>
+
+          <!-- opleiding 3 -->
+          <div class="cv__data">
+            <div class="cv__data-wrapper">
+              <h3 class="cv__title">Fiscaal recht</h3>
+              <span class="cv__subtitle">Universiteit Leiden</span>
+              <br>
+              <span class="cv__description">Propedeuse behaald</span>
+              <br>
+              <span class="cv__description">Gemiddeld cijfer 7.5</span>
+              <div class="cv__kalender">
+                <i class="uil uil-calendar-alt calendar__icon"></i>
+                <br>
+                08/2012 - 06/2015
+              </div>
+            </div>
+
+            <div>
+              <span class="cv__rounder"></span>
+              <span class="cv__line"></span>
+            </div>
+
+            <div></div>
+          </div>
+
+          <!-- opleiding 2 -->
+          <div class="cv__data">
+            <div></div>
+
+            <div>
+              <span class="cv__rounder"></span>
+              <span class="cv__line"></span>
+            </div>
+
+            <div class="cv__data-wrapper">
+              <h3 class="cv__title">Fiscale economie</h3>
+              <span class="cv__subtitle">Hogeschool Rotterdam</span>
+              <br>
+              <span class="cv__description">Propedeuse behaald</span>
+              <br>
+              <span class="cv__description">Gemiddeld cijfer 7.5</span>
+              <div class="cv__kalender">
+                <i class="uil uil-calendar-alt calendar__icon"></i>
+                <br>
+                08/2008 - 06/2012
+              </div>
+            </div>
+          </div>
+
+          <!-- opleiding 1 -->
+          <div class="cv__data">
+            <div class="cv__data-wrapper">
+              <h3 class="cv__title">HAVO</h3>
+              <span class="cv__subtitle">ROC Leiden | Volwassenenonderwijs</span>
+              <br>
+              <span class="cv__description">Profiel Economie & Maatschappij</span>
+              <br>
+              <span class="cv__description">Diploma behaald</span>
+              <br>
+              <span class="cv__description">Gemiddeld cijfer 7.5</span>
+              <div class="cv__kalender">
+                <i class="uil uil-calendar-alt calendar__icon"></i>
+                <br>
+                08/2006 - 06/2008
+              </div>
+            </div>
+
+            <div>
+              <span class="cv__rounder"></span>
+            </div>
+
+            <div></div>
+          </div>
+
+        </div>
+
+        <!-- cv content 2-->
+        <div class="cv__content" data-content id="werkervaring">
+          <!-- cv werkervaring -->
+
+          <!-- werkervaring 7 -->
+          <div class="cv__data">
+            <div class="cv__data-wrapper">
+              <h3 class="cv__title">Tentenbouwer</h3>
+              <span class="cv__subtitle">Tent4Rent</span>
+              <br>
+              <span class="cv__description">Op-afbouwen tenten</span>
+              <br>
+              <span class="cv__description">Referentie op aanvraag</span>
+              <div class="cv__kalender">
+                <i class="uil uil-calendar-alt calendar__icon"></i>
+                <br>
+                05/2022 - 10/2022
+              </div>
+            </div>
+
+            <div>
+              <span class="cv__rounder"></span>
+              <span class="cv__line"></span>
+            </div>
+
+            <div></div>
+          </div>
+
+          <!-- werkervaring 6 -->
+          <div class="cv__data">
+            <div></div>
+
+            <div>
+              <span class="cv__rounder"></span>
+              <span class="cv__line"></span>
+            </div>
+
+            <div class="cv__data-wrapper">
+              <h3 class="cv__title">Tentenbouwer</h3>
+              <span class="cv__subtitle">Tent4Rent</span>
+              <br>
+              <span class="cv__description">Op-afbouwen tenten</span>
+              <br>
+              <span class="cv__description">Referentie op aanvraag</span>
+              <div class="cv__kalender">
+                <i class="uil uil-calendar-alt calendar__icon"></i>
+                <br>
+                07/2021 - 12/2021
+              </div>
+            </div>
+          </div>
+
+          <!-- werkervaring 5 -->
+          <div class="cv__data">
+            <div class="cv__data-wrapper">
+              <h3 class="cv__title">Junior Project Manager</h3>
+              <span class="cv__subtitle">Blazter</span>
+              <br>
+              <span class="cv__description">Managen ontwikkeling websites</span>
+              <br>
+              <span class="cv__description">Wordpress websites maken</span>
+              <br>
+              <span class="cv__description">SEO</span>
+              <br>
+              <span class="cv__description">Klantenservice</span>
+              <br>
+              <span class="cv__description">Referentie op aanvraag</span>
+              <div class="cv__kalender">
+                <i class="uil uil-calendar-alt calendar__icon"></i>
+                <br>
+                11/2020 - 06/2021
+              </div>
+            </div>
+
+            <div>
+              <span class="cv__rounder"></span>
+              <span class="cv__line"></span>
+            </div>
+
+            <div></div>
+          </div>
+
+          <!-- werkervaring 4 -->
+          <div class="cv__data">
+            <div></div>
+
+            <div>
+              <span class="cv__rounder"></span>
+              <span class="cv__line"></span>
+            </div>
+
+            <div class="cv__data-wrapper">
+              <h3 class="cv__title">Tentenbouwer</h3>
+              <span class="cv__subtitle">Maessen Tenten</span>
+              <br>
+              <span class="cv__description">Op-afbouwen tenten</span>
+              <br>
+              <span class="cv__description">Referentie op aanvraag</span>
+              <div class="cv__kalender">
+                <i class="uil uil-calendar-alt calendar__icon"></i>
+                <br>
+                05/2017 - 04/2020
+              </div>
+            </div>
+          </div>
+
+          <!-- werkervaring 3 -->
+          <div class="cv__data">
+            <div class="cv__data-wrapper">
+              <h3 class="cv__title">Tentenbouwer</h3>
+              <span class="cv__subtitle">Tent4Rent</span>
+              <br>
+              <span class="cv__description">Op-afbouwen tenten</span>
+              <br>
+              <span class="cv__description">Referentie op aanvraag</span>
+              <div class="cv__kalender">
+                <i class="uil uil-calendar-alt calendar__icon"></i>
+                <br>
+                06/2016 - 12/2016
+              </div>
+            </div>
+
+            <div>
+              <span class="cv__rounder"></span>
+              <span class="cv__line"></span>
+            </div>
+
+            <div></div>
+          </div>
+
+          <!-- werkervaring 2 -->
+          <div class="cv__data">
+            <div></div>
+
+            <div>
+              <span class="cv__rounder"></span>
+              <span class="cv__line"></span>
+            </div>
+
+            <div class="cv__data-wrapper">
+              <h3 class="cv__title">Koerier</h3>
+              <span class="cv__subtitle">Koeriersbedrijf Barkas</span>
+              <br>
+              <span class="cv__description">Pakketten bezorgen</span>
+              <div class="cv__kalender">
+                <i class="uil uil-calendar-alt calendar__icon"></i>
+                <br>
+                05/2005 - 11/2015
+              </div>
+            </div>
+          </div>
+
+          <!-- werkervaring 1 -->
+          <div class="cv__data">
+            <div class="cv__data-wrapper">
+              <h3 class="cv__title">Autoschadehersteller</h3>
+              <span class="cv__subtitle">Autoschade van der Niet</span>
+              <br>
+              <span class="cv__description">Autoschade herstellen</span>
+              <div class="cv__kalender">
+                <i class="uil uil-calendar-alt calendar__icon"></i>
+                <br>
+                08/2002 - 05/2005
+              </div>
+            </div>
+
+            <div>
+              <span class="cv__rounder"></span>
+            </div>
+
+            <div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- download button -->
+    <div class="cv__download-button">
+      <a download="" href="assets/docs/Curriculum-Vitae__RubenJanse.pdf" class="button button__flex">
+        Download CV <i class="uil uil-file-download button__icon"></i>
+
+      </a>
+    </div>
+  </section>
+
+  <!-- contact -->
+  <section class="contact section" id="contact">
+    <div class="section__header">
+      <h2 class="section__title">Contact</h2>
+      <p class="section__subtitle">Hallo.</p>
+    </div>
+    <div class="contact__container container">
+      <div class="contact__options">
+
+        <!-- bellen -->
+        <a href="tel:0031644242869" target="_blank" class="contact__information">
+          <i class="uil uil-phone contact__icon"></i>
+          <div class="contact__data">
+            <h3 class="contact__title">Bel me</h3>
+            <p class="contact__description">06-44242869</p>
+          </div>
+        </a>
+
+        <!-- mailen -->
+        <a href="mailto:hallo@rubenjanse.nl" target="_blank" class="contact__information">
+          <i class="uil uil-envelope-alt contact__icon"></i>
+          <div class="contact__data">
+            <h3 class="contact__title">E-mail</h3>
+            <p class="contact__description">hallo@rubenjanse.nl</p>
+          </div>
+        </a>
+
+        <!-- github -->
+        <a href="https://github.com/rubenjanse/rubenjanse.nl" target="_blank" class="contact__information">
+          <i class="uil uil-github contact__icon"></i>
+          <div class="contact__data">
+            <h3 class="contact__title">GitHub</h3>
+            <p class="contact__description">@rubenjanse</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- footer -->
+<footer class="footer section" id="footer">
+
+  <div class="footer__container container">
+
+    <!-- name -->
+    <div class="footer__name">
+      <h2 class="footer__title">Ruben</h2>
+      <p class="footer__subtitle">Front-end Developer</p>
+    </div>
+
+    <!-- nav -->
+    <div class="footer__nav">
+      <ul class="footer__nav-list">
+        <li class="footer__nav-item">
+          <a href="#home" class="footer__nav-link flex">
+            <i class="uil uil-estate footer__nav-icon"></i>
+            Home
+          </a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#skills" class="footer__nav-link">
+            <i class="uil uil-clipboard-notes footer__nav-icon"></i>
+            Skills
+          </a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#diensten" class="footer__nav-link">
+            <i class="uil uil-suitcase footer__nav-icon"></i>
+            Diensten
+          </a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#portfolio" class="footer__nav-link">
+            <i class="uil uil-scenery footer__nav-icon"></i>
+            Portfolio
+          </a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#overmij" class="footer__nav-link">
+            <i class="uil uil-user footer__nav-icon"></i>
+            <span style="min-width: 63px">Over mij</span>
+          </a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#cv" class="footer__nav-link">
+            <i class="uil uil-clipboard-notes footer__nav-icon"></i>
+            CV
+          </a>
+        </li>
+        <li class="footer__nav-item">
+          <a href="#contact" class="footer__nav-link">
+            <i class="uil uil-message footer__nav-icon"></i>
+            Contact
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- copyright -->
+    <div class="footer__copyright">
+      Made by Ruben &copy;
+    </div>
+  </div>
+</footer>
+
+<!-- scroll up -->
+<a href="#" class="scroll__up hidden" id="scroll__up">
+  <i class="uil uil-arrow-up scroll__up-icon"></i>
+</a>
+
+<!-- swiper js -->
+<script src="node_modules/swiper/swiper-bundle.min.js"></script>
+
+<!-- main.js -->
+<script src="assets/js/main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+@use "var";
+
+.diensten__container{
+  margin: 0 var.$m-1-5;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.diensten__button{
+  border: 1px solid #e3e3e3;
+  border-radius: .5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,.15);
+  padding: 3.5rem 0.7rem 1.25rem 1rem;
+  cursor: pointer;
+
+  &:hover{
+    box-shadow: 0 4px 8px var(--color-transparent-light);
+    .diensten__link-arrow{
+      transform: translateX(.35rem);
+    }
+  }
+}
+
+.diensten__header{
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.diensten__icon{
+  font-size: 1.5rem;
+  color: var(--color-icon);
+}
+
+.diensten__title{
+  color: var(--color-text-title);
+  font-size: var(--font-size-h3);
+  font-weight: var.$font-medium;
+}
+
+.diensten__link{
+  display: flex;
+  align-items: center;
+  column-gap: .3rem;
+  cursor: pointer;
+}
+
+.diensten__link-text,
+.diensten__link-arrow{
+  color: var(--color-primary);
+}
+
+.diensten__link-arrow{
+  font-size: 1.5rem;
+  transition: .2s;
+}
+
+.diensten__modal{
+  background-color: var(--color-transparent-dark);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+  z-index: var.$z-middle-layer;
+}
+
+.modal__active{
+  visibility: visible;
+}
+
+.diensten__modal-data{
+  background-color: var(--color-background);
+  border-radius: .25rem;
+  border: 1px solid var(--color-opposite);
+  padding: 3.5rem 1rem;
+  position: relative;
+}
+
+.diensten__modal-title{
+  color: var(--color-text-title);
+  font-size: var(--font-size-h3);
+  margin-bottom: var.$m-1-5;
+}
+
+.modal__close-icon{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.2rem;
+  color: red;
+  cursor: pointer;
+}
+
+.modal__check-icon{
+  font-size: 1rem;
+  color: lawngreen;
+}
+
+.diensten__modal-item{
+  margin-bottom: var.$m-0-5;
+}
+
+.diensten__modal-content{
+  color: var(--color-text-paragraph);
+}
+
+////////// media queries //////////
+
+// 425px
+@media screen and (min-width: var.$screen-mobile-lg){
+  .diensten__container{
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// 768px
+@media screen and (min-width: var.$screen-tablet-sm){
+  .diensten__container{
+    padding-top: 1rem;
+  }
+}
+
+// 820px
+@media screen and (min-width: var.$screen-tablet-lg){
+ .diensten__container{
+   padding-top: 5rem;
+ }
+}
+
+// 1024px
+@media screen and (min-width: var.$screen-laptop){
+  .diensten__container{
+    max-width: 1024px;
+    width: 95%;
+    margin: 0 auto;
+    padding-top: 5rem;
+    gap: 3rem;
+
+  }
+}

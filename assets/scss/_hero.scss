@@ -1,0 +1,140 @@
+@use "var";
+
+.hero__container{
+  display: grid;
+  gap: 1.5rem;
+  margin: 0 var.$m-1-5;
+}
+
+.hero__content{
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: .5fr 3fr;
+  padding-top: 2rem;
+  align-items: center;
+}
+
+.hero__social{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+
+  .hero__social-icon{
+    font-size: 1.25rem;
+    color: var(--color-icon);
+
+    &:hover{
+      color: var(--color-icon-hover);
+    }
+  }
+}
+
+.hero__image-container{
+  padding: 7.5vw;
+}
+.hero__image{
+  border-radius: .5rem;
+  box-shadow: 0 2px 29px 14px var(--color-primary);
+}
+
+.hero__data{
+  grid-column: 1/3;
+}
+
+.hero__title{
+  font-size: var(--font-size-h1);
+  font-weight: var.$font-bold;
+  color: var(--color-text-title);
+  margin: var.$m-0-5 0;
+}
+
+.hero__subtitle{
+  font-size: var(--font-size-h3);
+  font-weight: var.$font-medium;
+  color: var(--color-text-subtitle);
+  margin-bottom: var.$m-1-5;
+}
+
+.hero__description{
+  font-size: var(--font-size-normal);
+  font-weight: var.$font-normal;
+  color: var(--color-text-paragraph);
+  margin-bottom: var.$m-1-5;
+}
+
+.home__scroll-button{
+  color: var(--color-primary);
+  transition: .3s;
+
+  &:hover{
+    transform: translateY(.25rem);
+  }
+}
+
+.home__scroll-mouse{
+  font-size: 2rem;
+}
+
+.home__scroll-name{
+  color: var(--color-text-paragraph);
+}
+
+.home__scroll-arrow{
+  font-size: 1.5rem;
+  transform: translateX(5px);
+}
+
+////////// media queries //////////
+
+// 375px
+@media screen and (min-width: var.$screen-mobile-md){
+  .hero__image-container{
+    text-align: end;
+    padding: 2rem 1rem;
+  }
+
+  .hero__image{
+    max-width: 180px;
+  }
+}
+
+// 600px
+@media screen and (min-width: var.$screen-mobile-xl){
+  .hero__content{
+    grid-template-columns: max-content 1fr 1fr;
+  }
+
+  .hero__image-container{
+    text-align: left;
+  }
+
+  .hero__data{
+    grid-column: unset;
+    > .button__flex{
+      margin-top: 2rem;
+    }
+  }
+}
+
+// 820px
+@media screen and (min-width: var.$screen-tablet-lg){
+  .hero__container {
+    display: grid;
+    gap: 1.5rem;
+    margin: 0 auto;
+    max-width: 1000px;
+    width: 90%;
+  }
+}
+
+// 1024px
+@media screen and (min-width: var.$screen-laptop){
+  .hero__container{
+    padding-top: 5rem;
+  }
+
+  .section__header {
+    padding: 3rem 0 4.5rem;
+  }
+}

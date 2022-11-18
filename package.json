@@ -1,0 +1,28 @@
+{
+  "name": "rubenjanse",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "keywords": [],
+  "author": "Ruben Janse",
+  "license": "ISC",
+  "scripts": {
+    "sass-watch": "sass --watch assets/scss/main.scss assets/scss/build/main.css",
+    "postcss-watch": "npx postcss assets/scss/build/main.css --use autoprefixer --output assets/css/main.css --watch",
+    "start": "npm-run-all --parallel sass-watch postcss-watch"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "npm-run-all": "^4.1.5",
+    "postcss": "^8.4.17",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.5",
+    "swiper": "^8.4.4"
+  },
+  "tags": [
+    "swiper"
+  ]
+}

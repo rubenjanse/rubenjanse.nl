@@ -1,0 +1,139 @@
+// primary color
+$hue-color: 200;
+
+// colors light theme
+$color-light-theme-background: #fff;
+$color-light-theme-background-transparent: transparent;
+$color-light-theme-primary: hsl($hue-color, 82%, 50%);
+$color-light-theme-primary-hover: hsl($hue-color, 82%, 70%);
+$color-light-theme-primary-lighter: hsl($hue-color, 82%, 90%);
+$color-light-theme-section-title: hsl($hue-color, 6%, 100%);
+$color-light-theme-section-subtitle: hsl($hue-color, 0%, 86%);
+$color-light-theme-header-title: hsl($hue-color, 6%, 11%);
+$color-light-theme-header-subtitle: hsl($hue-color, 8%, 50%);
+$color-light-theme-text-title: hsl($hue-color, 8%, 20%);
+$color-light-theme-text-subtitle: hsl($hue-color, 8%, 30%);
+$color-light-theme-text-paragraph: hsl($hue-color, 8%, 40%);
+$color-light-theme-icon: $color-light-theme-primary;
+$color-light-theme-icon-hover: $color-light-theme-primary-hover;
+$color-light-theme-link: hsl($hue-color, 6%, 40%);
+$color-light-theme-link-hover: $color-light-theme-primary;
+$color-light-theme-link-active: $color-light-theme-primary;
+$color-light-theme-transparent-middle: rgba(0,0,0,.50);
+$color-light-theme-transparent-dark: rgba(0,0,0,.75);
+$color-light-theme-transparent-light: rgba(0,0,0,.25);
+$color-light-theme-transparent-lighter: rgba(0,0,0,.10);
+$color-light-theme-input: hsl($hue-color, 4%, 20%);
+$color-light-theme-button-background: $color-light-theme-primary;
+$color-light-theme-button-background-hover: $color-light-theme-background;
+$color-light-theme-button-border: $color-light-theme-primary;
+$color-light-theme-button-border-hover: $color-light-theme-primary;
+$color-light-theme-button-text: $color-light-theme-background;
+$color-light-theme-button-text-hover: $color-light-theme-primary;
+$color-light-theme-border-transparent: transparent;
+$color-light-theme-border-primary: $color-light-theme-primary;
+$color-light-theme-footer-link: $color-light-theme-background;
+$color-light-theme-white: $color-light-theme-background;
+$color-light-theme-black: #000;
+$color-light-theme-opposite: #000;
+$color-light-theme-overlay: rgba(0,0,0,.50);
+
+// colors dark theme
+$color-dark-theme-background: #000;
+$color-dark-theme-background-transparent: transparent;
+$color-dark-theme-primary: hsl($hue-color, 82%, 50%);
+$color-dark-theme-primary-hover: hsl($hue-color, 82%, 70%);
+$color-dark-theme-primary-lighter: hsl($hue-color, 82%, 30%);
+$color-dark-theme-section-title: hsl($hue-color, 6%, 0%);
+$color-dark-theme-section-subtitle: hsl($hue-color, 0%, 10%);
+$color-dark-theme-header-title: hsl($hue-color, 6%, 89%);
+$color-dark-theme-header-subtitle: hsl($hue-color, 8%, 75%);
+$color-dark-theme-text-title: hsl($hue-color, 8%, 95%);
+$color-dark-theme-text-subtitle: hsl($hue-color, 8%, 90%);
+$color-dark-theme-text-paragraph: hsl($hue-color, 8%, 85%);
+$color-dark-theme-icon: $color-dark-theme-primary;
+$color-dark-theme-icon-hover: $color-dark-theme-primary-hover;
+$color-dark-theme-link: hsl($hue-color, 6%, 85%);
+$color-dark-theme-link-hover: $color-dark-theme-primary;
+$color-dark-theme-link-active: $color-dark-theme-primary;
+$color-dark-theme-transparent-middle: rgba(255,255,255,.50);
+$color-dark-theme-transparent-dark: rgba(0,0,0,.80);
+$color-dark-theme-transparent-light: rgba(255,255,255,.25);
+$color-dark-theme-transparent-lighter: rgba(255,255,255,.10);
+$color-dark-theme-input: hsl($hue-color, 4%, 70%);
+$color-dark-theme-button-background: $color-dark-theme-primary;
+$color-dark-theme-button-background-hover: $color-dark-theme-background;
+$color-dark-theme-button-border: $color-dark-theme-primary;
+$color-dark-theme-button-border-hover: $color-dark-theme-primary;
+$color-dark-theme-button-text: $color-dark-theme-background;
+$color-dark-theme-button-text-hover: $color-dark-theme-primary;
+$color-dark-theme-border-transparent: transparent;
+$color-dark-theme-border-primary: $color-dark-theme-primary;
+$color-dark-theme-footer-link: $color-dark-theme-background;
+$color-dark-theme-white: #fff;
+$color-dark-theme-black: $color-dark-theme-background;
+$color-dark-theme-opposite: #fff;
+$color-dark-theme-overlay: rgba(0,0,0,.75);
+
+
+//  font family
+$body-font:'Poppins', sans-serif;
+
+// font size small device
+$font-size-small-device-big: 2rem; // 32px
+$font-size-small-device-h1: 1.5rem;  // 24px
+$font-size-small-device-h2: 1.25rem;   // 20px
+$font-size-small-device-h3: 1.125rem;  // 18px
+$font-size-small-device-normal: .9375rem; // 15px
+$font-size-small-device-small: .8125rem; // 13px
+
+
+// font size large device
+
+$font-size-large-device-big: 3rem; // 48px
+$font-size-large-device-h1: 2.25rem;  // 36px
+$font-size-large-device-h2: 1.5rem;   // 24px
+$font-size-large-device-h3: 1.25rem; // 20px
+$font-size-large-device-normal: 1rem; // 16px
+$font-size-large-device-small: .875rem; // 14px
+
+
+
+// font weight
+$font-normal: 400;
+$font-medium: 500;
+$font-semi-bold: 600;
+$font-bold: 700;
+
+// margin
+$m-0-25: .25rem;  // 4px
+$m-0-5: .5rem;    // 8px
+$m-0-75: .75rem;  // 12px
+$m-1: 1rem; // 16px
+$m-1-25: 1.25rem; // 20px
+$m-1-5: 1.5rem; // 24px
+$m-1-75: 1.75rem; // 28px
+$m-2: 2rem; // 32px
+$m-2-5: 2.5rem; // 40px
+$m-3: 3rem; // 48px
+
+// z-index
+$z-bring-to-front: 100;
+$z-send-to-back: -1;
+$z-top-layer: 30;
+$z-middle-layer: 20;
+$z-bottom-layer: 10;
+
+// breakpoints
+$screen-mobile-xs: 280px;
+$screen-mobile-sm: 320px;
+$screen-mobile-md: 375px;
+$screen-mobile-lg: 425px;
+$screen-mobile-xl: 600px;
+$screen-tablet-sm: 768px;
+$screen-tablet-lg: 820px;
+$screen-laptop: 1024px;
+$screen-desktop: 1280px;
+$screen-widescreen: 1536px;
+
+

@@ -1,0 +1,85 @@
+@use "var";
+
+@mixin light-theme {
+  --color-background: #{var.$color-light-theme-background};
+  --color-background-transparent: #{var.$color-light-theme-background-transparent};
+  --color-primary: #{var.$color-light-theme-primary};
+  --color-primary-hover: #{var.$color-light-theme-primary-hover};
+  --color-section-title: #{var.$color-light-theme-section-title};
+  --color-section-subtitle: #{var.$color-light-theme-section-subtitle};
+  --color-header-title: #{var.$color-light-theme-header-title};
+  --color-header-subtitle: #{var.$color-light-theme-header-subtitle};
+  --color-text-title: #{var.$color-light-theme-text-title};
+  --color-text-subtitle: #{var.$color-light-theme-text-subtitle};
+  --color-text-paragraph: #{var.$color-light-theme-text-paragraph};
+  --color-icon: #{var.$color-light-theme-icon};
+  --color-icon-hover: #{var.$color-light-theme-icon-hover};
+  --color-link: #{var.$color-light-theme-link};
+  --color-link-hover: #{var.$color-light-theme-link-hover};
+  --color-link-active: #{var.$color-light-theme-link-active};
+  --color-transparent-middle: #{var.$color-light-theme-transparent-middle};
+  --color-transparent-light: #{var.$color-light-theme-transparent-light};
+  --color-transparent-dark: #{var.$color-light-theme-transparent-dark};
+  --color-transparent-lighter: #{var.$color-light-theme-transparent-lighter};
+  --color-input: #{var.$color-light-theme-input};
+  --color-button-background: #{var.$color-light-theme-button-background};
+  --color-button-background-hover: #{var.$color-light-theme-button-background-hover};
+  --color-button-border: #{var.$color-light-theme-button-border};
+  --color-button-border-hover: #{var.$color-light-theme-button-border-hover};
+  --color-button-text: #{var.$color-light-theme-button-text};
+  --color-button-text-hover: #{var.$color-light-theme-button-text-hover};
+  --color-border-transparent: #{var.$color-light-theme-border-transparent};
+  --color-border-primary: #{var.$color-light-theme-border-primary};
+  --color-footer-link: #{var.$color-light-theme-footer-link};
+  --color-white: #{var.$color-light-theme-white};
+  --color-black: #{var.$color-light-theme-black};
+  --color-opposite: #{var.$color-light-theme-opposite};
+  --color-overlay: #{var.$color-light-theme-overlay};
+  --color-primary-lighter: #{var.$color-light-theme-primary-lighter};
+}
+
+@mixin dark-theme {
+  --color-background: #{var.$color-dark-theme-background};
+  --color-background-transparent: #{var.$color-dark-theme-background-transparent};
+  --color-primary: #{var.$color-dark-theme-primary};
+  --color-primary-hover: #{var.$color-dark-theme-primary-hover};
+  --color-section-title: #{var.$color-dark-theme-section-title};
+  --color-section-subtitle: #{var.$color-dark-theme-section-subtitle};
+  --color-header-title: #{var.$color-dark-theme-header-title};
+  --color-header-subtitle: #{var.$color-dark-theme-header-subtitle};
+  --color-text-title: #{var.$color-dark-theme-text-title};
+  --color-text-subtitle: #{var.$color-dark-theme-text-subtitle};
+  --color-text-paragraph: #{var.$color-dark-theme-text-paragraph};
+  --color-icon: #{var.$color-dark-theme-icon};
+  --color-icon-hover: #{var.$color-dark-theme-icon-hover};
+  --color-link: #{var.$color-dark-theme-link};
+  --color-link-hover: #{var.$color-dark-theme-link-hover};
+  --color-link-active: #{var.$color-dark-theme-link-active};
+  --color-transparent-middle: #{var.$color-dark-theme-transparent-middle};
+  --color-transparent-light: #{var.$color-dark-theme-transparent-light};
+  --color-transparent-dark: #{var.$color-dark-theme-transparent-dark};
+  --color-transparent-lighter: #{var.$color-dark-theme-transparent-lighter};
+  --color-input: #{var.$color-dark-theme-input};
+  --color-button-background: #{var.$color-dark-theme-button-background};
+  --color-button-background-hover: #{var.$color-dark-theme-button-background-hover};
+  --color-button-border: #{var.$color-dark-theme-button-border};
+  --color-button-border-hover: #{var.$color-dark-theme-button-border-hover};
+  --color-button-text: #{var.$color-dark-theme-button-text};
+  --color-button-text-hover: #{var.$color-dark-theme-button-text-hover};
+  --color-border-transparent: #{var.$color-dark-theme-border-transparent};
+  --color-border-primary: #{var.$color-dark-theme-border-primary};
+  --color-footer-link: #{var.$color-dark-theme-footer-link};
+  --color-white: #{var.$color-dark-theme-white};
+  --color-black: #{var.$color-dark-theme-black};
+  --color-opposite: #{var.$color-dark-theme-opposite};
+  --color-overlay: #{var.$color-dark-theme-overlay};
+  --color-primary-lighter: #{var.$color-dark-theme-primary-lighter};
+}
+
+.light{
+  @include light-theme;
+}
+
+.dark{
+  @include dark-theme;
+}

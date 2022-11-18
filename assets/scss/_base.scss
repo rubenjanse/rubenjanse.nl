@@ -1,0 +1,44 @@
+@use "var";
+
+*,
+*::after,
+*::before{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+  font-family: var.$body-font;
+  font-size: var(--font-size-normal);
+  background-color: var(--color-background);
+  color: var(--color-text-paragraph);
+  margin: 0;
+
+}
+
+h1,
+h2,
+h3,
+h4{
+  color: var(--color-header-title);
+  font-weight: var.$font-semi-bold;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+

@@ -1,0 +1,126 @@
+@use "var";
+
+.overmij__container{
+  margin: 0 var.$m-1-5;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.overmij__image{
+  border-radius: .5rem;
+  box-shadow: 0 0 1px var(--color-transparent-light);
+  max-width: 650px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.overmij__description{
+  font-size: var(--font-size-normal);
+  font-weight: var.$font-normal;
+  color: var(--color-text-paragraph);
+  max-width: 626px;
+  margin: 1.5rem auto;
+  text-align: center;
+}
+
+.swiper-container{
+  background-color: var(--color-primary-lighter);
+  padding: 3rem 0;
+  border-radius: .5rem;
+  max-width: 768px;
+  margin: 1rem auto;
+}
+
+.swiper-slide {
+  font-size: var(--font-size-normal);
+  font-weight: var.$font-normal;
+  color: var(--color-text-paragraph);
+  background: var(--color-background);
+  height: auto;
+  padding: 0 2rem;
+  border-radius: .5rem;
+}
+
+.swiper-slide{
+  width: 240px;
+}
+
+.swiper-slide:nth-child(2n) {
+  width: 421px;
+}
+
+.swiper-slide:nth-child(3n) {
+  width: 400px;
+}
+
+.swiper-slide:nth-child(4n) {
+  width: 150px;
+}
+
+.slide__header{
+  margin-bottom: var.$m-1;
+  text-align: center;
+}
+
+.slide__header-icon{
+  font-size: 2rem;
+  color: var(--color-primary);
+}
+
+.slide__header-text{
+  font-size: var(--font-size-normal);
+  font-weight: var.$font-semi-bold;
+  color: var(--color-text-subtitle);
+}
+.slide__wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  margin: 1rem 0;
+}
+
+.slide__content{
+  font-size: var(--font-size-normal);
+  color: var(--color-text-title);
+  display: flex;
+  align-items: center;
+  gap: .3rem;
+}
+
+.swiper-slide .uil-html5-alt{
+  font-size: 1.5rem;
+  color: orange;
+  background-color: var(--color-overlay);
+  border-radius: .5rem;
+}
+
+.swiper-slide .uil-css3-simple{
+  font-size: 1.5rem;
+  color: dodgerblue;
+  background-color: var(--color-overlay);
+  border-radius: .5rem;
+}
+
+.swiper-slide .uil-java-script{
+  font-size: 1.5rem;
+  color: yellow;
+  background-color: var(--color-overlay);
+  border-radius: .5rem;
+}
+
+.swiper-slide .uil-asterisk,
+.swiper-slide .uil-check{
+  font-size: 1.5rem;
+  color: lawngreen;
+}
+
+
+////////// media queries //////////
+// 768px
+@media screen and (min-width: var.$screen-tablet-sm){
+  .overmij__container{
+    gap: 4rem;
+  }
+
+}

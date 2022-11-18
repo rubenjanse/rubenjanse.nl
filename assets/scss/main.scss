@@ -1,0 +1,22 @@
+// Partials
+@use "../../node_modules/swiper/swiper";
+@use "var";
+@use "base";
+@use "custom__classes";
+@use "button";
+@use "nav__menu";
+@use "nav__toggle";
+@use "themes";
+@use "font-size";
+@use "hero";
+@use "page";
+@use "skills";
+@use "diensten";
+@use "portfolio";
+@use "overmij";
+@use "cv";
+@use "contact";
+@use "footer";
+
+// Import font
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');

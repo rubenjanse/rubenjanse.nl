@@ -1,0 +1,29 @@
+@use "var";
+
+@mixin font-small {
+  --font-size-big: #{var.$font-size-small-device-big};
+  --font-size-h1: #{var.$font-size-small-device-h1};
+  --font-size-h2: #{var.$font-size-small-device-h2};
+  --font-size-h3: #{var.$font-size-small-device-h3};
+  --font-size-normal: #{var.$font-size-small-device-normal};
+  --font-size-small: #{var.$font-size-small-device-small};
+}
+
+@mixin font-large {
+  --font-size-big: #{var.$font-size-large-device-big};
+  --font-size-h1: #{var.$font-size-large-device-h1};
+  --font-size-h2: #{var.$font-size-large-device-h2};
+  --font-size-h3: #{var.$font-size-large-device-h3};
+  --font-size-normal: #{var.$font-size-large-device-normal};
+  --font-size-small: #{var.$font-size-large-device-small};
+}
+
+
+.font-small{
+  @include font-small;
+}
+
+.font-large{
+ @include font-large;
+}
+

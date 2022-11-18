@@ -1,0 +1,51 @@
+@use "var";
+
+.nav__toggle, {
+  background-color: var(--color-background-transparent);
+  height: 39px;
+  width: 39px;
+  border: 1px solid var(--color-border-transparent);
+  border-radius: 5px;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+
+  &:hover{
+    border-color: var(--color-border-primary);
+  }
+}
+
+.toggle-top,
+.toggle-middle,
+.toggle-bottom {
+  width: 27px;
+  height: 2px;
+  background-color: var(--color-primary);
+  transition: transform .2s;
+
+}
+
+.open .toggle-top {
+  transform: rotate(40deg);
+  position: relative;
+  top: 4px;
+  left: 0;
+  width: 28px;
+}
+
+.open .toggle-middle {
+  display: none;
+}
+
+.open .toggle-bottom {
+  transform: rotate(-40deg);
+  position: relative;
+  top: -5px;
+  left: 0;
+  width: 28px;
+}
